@@ -1,0 +1,38 @@
+body {
+  background-color: #F8F8F8;
+
+}
+.container {
+  background-color: white;
+  margin: 50px;
+}
+.scroll-box {
+  background-color: white;
+  display: inline-block;
+  height:100%;
+  width: 95%;
+  border: 1px solid #ccc;
+  font:16px/26px Georgia Garamond, Serif;
+  overflow:auto;
+  float: right;
+}
+#chart {
+  position:fixed ;
+
+  display: inline-block;
+  /*width: "20px";*/
+  float:left;
+}
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+  pointer-events: none;
+  font:14px Georgia Garamond, Serif;
+}
+.scaling-svg {
+
+}
