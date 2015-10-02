@@ -345,28 +345,23 @@ for (var i = 0; i < MapRows; i++) {
     }
 }
 
+
 //tool tip for heatmap
 var tip = d3.tip()
   .attr('class', 'd3-tip')
   .direction('e')
-  // .offset([30, 100])
   .html(function(d) {
     var page = d.j+1;
-    console.log(d[0][2])
     return "Page "+page+": " + d[0][2] + " citations";
   });
+
 //Create SVG element
 var newWidth = width + margin.left + margin.right;
 var newHeight = height + margin.top + margin.bottom;
 
 var svg = d3.select("#chart").append("svg")
-    // .attr("width", newWidth)
-    // .attr("height", newHeight)
-    // .attr("viewBox", "0 0 100 500")
     .attr("viewBox", "0 0 400 "+newHeight)
-    // .attr("viewBox", "0 0 "+newWidth+" "+newHeight)
     .attr("class", "scaling-svg")
-
     .attr("preserveAspectRatio", "xMinYMin meet")
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
